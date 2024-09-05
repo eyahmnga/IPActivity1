@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function display(){
+        var namevalue = document.getElementById('Getname').value;
+        var sub1value = document.getElementById('Getgrade1').value;
+        var sub2value = document.getElementById('Getgrade2').value;
+        var sub3value = document.getElementById('Getgrade3').value;
+        var sub4value = document.getElementById('Getgrade4').value;
+        var sub5value = document.getElementById('Getgrade5').value;
+
+        var total = (parseFloat(sub1value) + parseFloat(sub2value) + parseFloat(sub3value) + parseFloat(sub4value) + parseFloat(sub5value) ) /5;
+        alert ("Name: " + namevalue + "\n" + "IP1: " + sub1value + "\n" + "IM1: " + sub2value + "\n" + "OOP: " + sub3value + "\n" + "EDP: " + sub4value + "\n" + "HCI2: " + sub5value + "\n" + "Average: " + total)
+    }
+</script>
+<body>
+    <div class="main">
+        <div>
+            <b class="user">Name</b>
+            <input type="string" id="Getname">
+        </div>
+
+        <br>
+
+            <b class="gr">GRADE</b>
+
+        <div>
+        <br>
+            <b class="sub1">IP1</b>
+            <input type="number" id="Getgrade1">
+        </div>
+
+        <br>
+        <div>
+            <b class="sub2">IM1</b>
+            <input type="number" id="Getgrade2">
+        </div>
+
+        <br>
+        <div>
+            <b class="sub3">OOP</b>
+            <input type="number" id="Getgrade3">
+        </div>
+
+        <br>
+        <div>
+            <b class="sub4">EDP</b>
+            <input type="number" id="Getgrade4">
+        </div>
+
+        <br>
+        <div>
+            <b class="sub5">HCI2</b>
+            <input type="number" id="Getgrade5">
+        </div>
+
+        <br>
+        <div>
+            <button onclick="display()">Compute</button>
+        </div>
+            
+        
+    </div>
+    
+</body>
+</html>
